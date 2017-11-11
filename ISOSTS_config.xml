@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DAXE_CONFIG>
+  
+  <LANGUAGE>
+    <SCHEMA_FILE name="ISOSTS.xsd"/>
+    <ROOT element="standard"/>
+  </LANGUAGE>
+  
+  <MENUS>
+    <MENU name="Меню">
+      <INSERT_MENU name="p" node_type="element"/>
+      <INSERT_MENU name="bold" node_type="element"/>
+    </MENU>
+  </MENUS>
+
+  <ELEMENTS_DISPLAY>
+    <ELEMENT_DISPLAY element="standard" type="division"/>
+    <ELEMENT_DISPLAY element="front" type="division"/>
+    <ELEMENT_DISPLAY element="body" type="division"/>
+    <ELEMENT_DISPLAY element="back" type="division"/>
+    <ELEMENT_DISPLAY element="sec" type="area"/>
+    <ELEMENT_DISPLAY element="title" type="hiddenp"/>
+    <ELEMENT_DISPLAY element="table-wrap" type="area"/>
+    <ELEMENT_DISPLAY element="table" type="table">
+      <PARAMETER name="colspanAttr" value="colspan"/>
+      <PARAMETER name="rowspanAttr" value="rowspan"/>
+      <PARAMETER name="alignAttr" value="align"/>
+    </ELEMENT_DISPLAY>
+    <ELEMENT_DISPLAY element="tr" type="tr"/>
+    <ELEMENT_DISPLAY element="td" type="td"/>
+    <ELEMENT_DISPLAY element="th" type="th">
+      <PARAMETER name="style" value="BOLD"/>
+    </ELEMENT_DISPLAY>
+    <ELEMENT_DISPLAY element="break" type="br"/>
+    <ELEMENT_DISPLAY element="p" type="hiddenp"/>
+    <ELEMENT_DISPLAY element="italic" type="style">
+      <PARAMETER name="style" value="ITALIC"/>
+    </ELEMENT_DISPLAY>
+    <ELEMENT_DISPLAY element="bold" type="style">
+      <PARAMETER name="style" value="BOLD"/>
+    </ELEMENT_DISPLAY>
+    <ELEMENT_DISPLAY element="sup" type="style">
+      <PARAMETER name="style" value="SUPERSCRIPT"/>
+    </ELEMENT_DISPLAY>
+    <ELEMENT_DISPLAY element="sub" type="style">
+      <PARAMETER name="style" value="SUBSCRIPT"/>
+    </ELEMENT_DISPLAY>
+  </ELEMENTS_DISPLAY>
+
+
+  <STRINGS language="ru">
+    <ELEMENT_STRINGS element="standard">
+      <TITLE>ISOSTS</TITLE>
+      <DOCUMENTATION>
+        Корень конфигурации
+      </DOCUMENTATION>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="front">
+      <TITLE>Шапка документа</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="body">
+      <TITLE>Тело документа</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="back">
+      <TITLE>Конец документа</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="main">
+      <TITLE>Название</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="p">
+      <TITLE>Параграф</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="break">
+      <TITLE>Разрыв строки</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="title">
+      <TITLE>Заголовок</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="italic">
+      <TITLE>Курсив</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="bold">
+      <TITLE>Жирный</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="sec">
+      <TITLE>Раздел</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="table">
+      <TITLE>Таблица</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="td">
+      <TITLE>Колонка</TITLE>
+    </ELEMENT_STRINGS>
+    <ELEMENT_STRINGS element="tr">
+      <TITLE>Строка</TITLE>
+    </ELEMENT_STRINGS>
+  </STRINGS>
+
+</DAXE_CONFIG>
